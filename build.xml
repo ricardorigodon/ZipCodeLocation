@@ -1,0 +1,24 @@
+
+<project name="Project1" default="compile">    
+<target name="compile">       
+<javac srcdir="."/>    
+</target>
+
+   
+<target name="clean">
+    <delete>          
+	<fileset dir="." includes="**/*.class, "/>      
+     </delete> 
+   <delete dir= "META-INF"/> 
+   <delete file= "zipout.txt"/>
+   <delete>
+   <fileset dir="." includes="**/*~"/>
+</delete>
+  </target> 
+<target name = "author">
+<echo message = "Ricardo Rigodon"/>
+
+</target>
+
+</project> 
+
